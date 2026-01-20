@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.05.2026 - Joanna i Łukasz</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        /* Obrazek nagłówka - responsywny */
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            max-height: 500px; /* Opcjonalne ograniczenie wysokości */
+        }
+
+        .content {
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .info {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .form-placeholder {
+            background-color: #f9f9f9;
+            border: 2px dashed #ccc;
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 10px;
+            display: inline-block;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .form-placeholder p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #888;
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        /* Styl dla linków, jeśli dodasz je w przyszłości */
+        a {
+            color: #2a5db0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- 
+               UWAGA: Poniższy link prowadzi do obrazka z Google Sites. 
+               Dla pewności zalecam pobranie tego zdjęcia i wrzucenie go do repozytorium GitHub, 
+               a następnie zmianę src na np. "zdjecie-naglowka.jpg".
+            -->
+            <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkdrk3Xlfr_twqa8x_kZxoVBy05yGvf7Cap4VCHjdz4Xl5VJ8z4CziSSnG5bi4MEO0U2czH_TO3uMkUZNVEcrAG4skwh6BAL7hMoTb0xcG6ezqknZta5j2XnSRo_1iYPuY1vHJ6VWXUYzr1W51NA9BciBgLLTHZA6cajar69EubdXRHpK5mG4at5jHU_YTIb676UBiKb2LMbSf48_aFeorOLnglgdJuin7TqbHk=w1280" alt="Joanna i Łukasz - Zdjęcie nagłówkowe">
+        </header>
+
+        <div class="content">
+            <h1>Joanna i Łukasz zapraszają na PIWO! 🍺 *</h1>
+            
+            <p class="subtitle">
+                * Pierwszomajowa Impreza Weselno - Odpoczynkowa
+            </p>
+
+            <div class="info">
+                <p>Więcej informacji wkrótce!</p>
+                <p>Niedługo poprosimy o wskazanie, czy będziesz / będziecie mogli świętować z nami osobiście:</p>
+            </div>
+
+            <div class="form-placeholder">
+                <p>👉 A tu będzie FORMULARZ 🙃 👈</p>
+                <!-- Tutaj w przyszłości możesz wkleić kod z Google Forms (iframe) -->
+            </div>
+        </div>
+
+        <footer>
+            <p>1.05.2026 &copy; Joanna i Łukasz</p>
+        </footer>
+    </div>
+
+</body>
+</html>
