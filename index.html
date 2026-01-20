@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wstęp - Joanna i Łukasz</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #2a5db0;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #1e4280;
+        }
+
+        .hint {
+            margin-top: 15px;
+            font-size: 0.85em;
+            color: #777;
+        }
+        
+        /* Ukrycie komunikatu o błędzie domyślnie */
+        #error-msg {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Witaj! 👋</h1>
+        <p>Ta strona jest dostępna tylko dla gości.</p>
+        <p>Prosimy podać hasło:</p>
+        
+        <form id="loginForm">
+            <input type="text" id="password" placeholder="Wpisz hasło..." required autocomplete="off">
+            <button type="submit">Wejdź</button>
+        </form>
+        
+        <p id="error-msg">Przekierowywanie...</p>
+
+        <p class="hint">Wskazówka: Wielkość liter ma znaczenie.</p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Zatrzymuje standardowe wysłanie formularza
+            
+            var pass = document.getElementById('password').value;
+            
+            // Usuwamy spacje z początku i końca
+            pass = pass.trim();
+
+            if (pass) {
+                // Przekierowanie do pliku o nazwie [haslo].html
+                // encodeURIComponent zabezpiecza przed znakami specjalnymi, ale hasło powinno być alfanumeryczne
+                window.location.href = pass + ".html";
+            }
+        });
+    </script>
+
+</body>
+</html>
