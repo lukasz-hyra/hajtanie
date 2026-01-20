@@ -7,7 +7,7 @@
 <meta name="googlebot" content="noindex, nofollow, noarchive">
     <meta name="viewport" content="width=device-width, initial-scale=0.75">
     <title>1.05.2026 - Joanna i Łukasz</title>
-    <style>
+   <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -27,17 +27,19 @@
         header {
             width: 100%;
             height: auto;
-            overflow: hidden;
             margin-bottom: 40px;
+            /* Dodatkowy margines od góry, żeby obrazek nie dotykał sufitu przeglądarki */
+            margin-top: 20px; 
         }
 
-        /* Obrazek nagłówka - responsywny */
+        /* POPRAWIONY STYL OBRAZKA */
         header img {
-            width: 70%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-            max-height: 500px; /* Opcjonalne ograniczenie wysokości */
+            width: 80%;          /* Na telefonach zajmie całą dostępną szerokość */
+            max-width: 400px;     /* Na komputerze nie przekroczy 600px (zmień wg uznania) */
+            height: auto;         /* Zachowaj proporcje */
+            display: block;       
+            margin: 0 auto;       /* Wyśrodkowanie */
+            border-radius: 8px;   /* Opcjonalne zaokrąglenie */
         }
 
         .content {
@@ -90,7 +92,6 @@
             border-top: 1px solid #eee;
         }
 
-        /* Styl dla linków, jeśli dodasz je w przyszłości */
         a {
             color: #2a5db0;
             text-decoration: none;
@@ -104,12 +105,8 @@
 
     <div class="container">
         <header>
-            <!-- 
-               UWAGA: Poniższy link prowadzi do obrazka z Google Sites. 
-               Dla pewności zalecam pobranie tego zdjęcia i wrzucenie go do repozytorium GitHub, 
-               a następnie zmianę src na np. "zdjecie-naglowka.jpg".
-            -->
-            <img src="1maja.jpg" alt="Joanna i Łukasz - Zdjęcie nagłówkowe" width="300">
+
+            <img src="1maja.jpg" alt="Joanna i Łukasz - Zdjęcie nagłówkowe">
         </header>
 
         <div class="content">
