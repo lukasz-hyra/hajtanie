@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poprawiny w Kwaczale - 2.05.2026</title>
+    <!-- Blokada indeksowania przez wyszukiwarki (tak jak w poprzednich stronach) -->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Import czcionki Open Sans dla ładnego wyglądu -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            /* Ustawienie tła z kaczuszkami */
+            background-image: url('tlo.png'); 
+            background-color: #ffffff; /* Kolor tła pod spodem */
+            background-repeat: repeat; /* Powtarzanie wzoru */
+            background-size: 400px; /* Rozmiar wzoru kaczek - dostosuj jeśli będą za duże/małe */
+            background-attachment: fixed; /* Tło nie przesuwa się przy przewijaniu */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            /* Białe tło pod tekstem, lekko przezroczyste, żeby tekst był czytelny na kaczuszkach */
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 40px 20px;
+            max-width: 800px;
+            width: 90%;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1); /* Delikatny cień ramki */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .date-time {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .location {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .details {
+            font-size: 1.1em;
+            line-height: 1.6;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .details a {
+            color: #000;
+            text-decoration: underline;
+            word-break: break-word; /* Łamanie długich linków na telefonach */
+        }
+
+        .details a:hover {
+            color: #2a5db0;
+        }
+
+        /* Styl zdjęcia bramy */
+        .main-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin: 0 auto 30px auto;
+            display: block;
+        }
+
+        .content-placeholder {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        /* Responsywność dla telefonów */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6em; }
+            .date-time { font-size: 1.4em; }
+            .location { font-size: 1.3em; }
+            .details { font-size: 0.9em; }
+            .container { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tytuł z emoji -->
+        <h1>🎉 Poprawiny w Kwaczale ✨</h1>
+
+        <!-- Data i godzina -->
+        <div class="date-time">
+            2 maja 2026 r.<br>
+            godz. 16:30
+        </div>
+
+        <!-- Lokalizacja -->
+        <div class="location">
+            m. Kwaczała - Stare Dworzysko
+        </div>
+
+        <!-- Linki i współrzędne -->
+        <div class="details">
+            Google Maps: 
+            <a href="https://www.google.com/maps/search/?api=1&query=50.08223733654345,19.49905012053164" target="_blank">
+                50.08223733654345, 19.49905012053164
+            </a>
+            <br>
+            What3words: 
+            <a href="https://what3words.com/zapewnić.nektarynka.nożyczki" target="_blank">
+                ///zapewnić.nektarynka.nożyczki
+            </a>
+        </div>
+
+        <!-- Zdjęcie bramy (musi nazywać się dworzysko.jpg) -->
+        <img src="dworzysko.jpg" alt="Brama wjazdowa Stare Dworzysko" class="main-image">
+
+        <!-- Miejsce na treść -->
+        <div class="content-placeholder">
+            Tekst treści
+        </div>
+    </div>
+
+</body>
+</html>
