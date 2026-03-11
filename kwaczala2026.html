@@ -111,13 +111,88 @@
             .details { font-size: 0.9em; }
             .container { padding: 20px 15px; }
         }
+        /* --- STYLE DLA SEKCJI FAQ --- */
+        .faq-section {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: left; /* Pytania czyta się lepiej wyrównane do lewej */
+            width: 100%;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .faq-item {
+            background-color: #ffffff; /* Białe tło kafelka */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Delikatny cień */
+        }
+
+        .faq-item summary {
+            font-weight: 700;
+            padding: 16px 20px;
+            cursor: pointer;
+            font-size: 1.1em;
+            outline: none;
+            position: relative;
+            list-style: none; /* Ukrywa domyślną czarną strzałkę */
+        }
+
+        /* Ukrycie strzałki dla przeglądarek opartych na Safari/Chrome */
+        .faq-item summary::-webkit-details-marker {
+            display: none; 
+        }
+
+        /* Własny znacznik "+" po prawej stronie */
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: #666;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* Zmiana plusa na minus po rozwinięciu */
+        .faq-item[open] summary::after {
+            content: '−'; /* Znak minusa */
+        }
+
+        /* Subtelna linia i marginesy dla odpowiedzi */
+        .faq-content {
+            padding: 0 20px 20px 20px;
+            font-size: 1em;
+            line-height: 1.6;
+            color: #444;
+            border-top: 1px solid #eee;
+            margin-top: 5px;
+            padding-top: 15px;
+        }
+
+        /* Efekt podświetlenia najechania myszką */
+        .faq-item summary:hover {
+            background-color: #fcfcfc;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <!-- Tytuł z emoji -->
-        <h1>🎉 Poślubny piknik w Kwaczale ✨ 🦆</h1>
+        <h1>🎉 Poślubny piknik Asi i Łukasza w Kwaczale ✨ 🦆</h1>
 
         <!-- Data i godzina -->
         <div class="date-time">
@@ -161,7 +236,46 @@
             <p>W razie poszukiwania planów na kolejny dzień (3 Maja) - w pobliżu jest park rozrywki Energylandia, no i oczywiście tradycyjne atrakcje Jury Krakowsko-Częstochowskiej!</p>
             <p>Formuła imprezy zakłada pełną swobodę, zatem nie musicie się specjalnie zapowiadać - zapraszamy Was w dowolnym składzie i wymiarze czasowym 😉</p></div>
         </div>
-    
+    <!-- Sekcja FAQ -->
+        <div class="faq-section">
+            <h2>Częste pytania (FAQ)</h2>
+            
+            <details class="faq-item">
+                <summary>O której zaczynamy i do której bawimy?</summary>
+                <div class="faq-content">
+                    <p>Zaczynamy oficjalnie o 15:00, natomiast fizycznie będziemy na miejscu już od ok. 12:00 aby wszystko przygotować. Jeśli planujecie np. przybyć na chwilę po drodze, przybić piątkę - będzie nam mega miło!</p>
+                    <p>Bawimy się do momentu, aż skończą się siły). Teren oddajemy do godz. 10 w niedzielę.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Jaki obowiązuje ubiór (dress code)?</summary>
+                <div class="faq-content">
+                    <p>Pełen luz! Formuła piknikowo-woodstockowa. Ubierzcie się tak, żeby było Wam wygodnie odpoczywać i dobrze się bawić.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Czy na miejscu jest parking?</summary>
+                <div class="faq-content">
+                    <p>Tak, przed samą bramą do Starego Dworzyska znajduje się spory, bezpłatny parking. Z kolei na terenie pikniku można będzie stanąć camperem lub rozbić namiot.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Jestem zdeklarowanym mięsożercą, ze słodyczy najbardziej lubię boczek. Co robić, jak żyć?</summary>
+                <div class="faq-content">
+                    <p>Możecie wziąć ze sobą dowolne zaprowiantowanie. My przekąski i grilla bezmięsnego ale miejsca na ruszcie starczy na każdą z opcji!</p>
+                </div>
+            </details>
+        </div>
+                <details class="faq-item">
+                <summary>Czy mam zabrać ze sobą jakieś akcesoria imprezowe?</summary>
+                <div class="faq-content">
+                    <p>Co tylko zechcecie - tak, aby móc się dobrze bawić i zrelaksować w granicach komfortu innych.</p>
+                    <p>Chcielibyśmy zachować woodstockowy klimat wzajemnej życzliwości i zabawy - jeśli np. masz fajną grę, przebranie, gadżet, pojazd mogący spodobać się innym - serdecznie zapraszamy!</p>
+                </div>
+            </details>
 
 </body>
 </html>
