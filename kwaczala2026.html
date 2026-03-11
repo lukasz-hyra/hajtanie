@@ -97,7 +97,7 @@
         }
 
         .content-placeholder {
-            font-size: 0.9em
+            font-size: 0.9em;
             font-weight: 500;
             margin-top: 16px;
             text-align: left;
@@ -111,6 +111,7 @@
             .details { font-size: 0.9em; }
             .container { padding: 20px 15px; }
         }
+
         /* --- STYLE DLA SEKCJI FAQ --- */
         .faq-section {
             margin-top: 50px;
@@ -197,8 +198,11 @@
         <!-- Data i godzina -->
         <div class="date-time">
             2 maja 2026 r.<br>
-            godz. od 15:00 do rana :)</div>
-             <div class="content-placeholder"><center>(można wcześniej ale jeszcze będziemy szykować - można pomóc :))</center>
+            godz. od 15:00 do rana :)
+        </div>
+        
+        <div class="content-placeholder">
+            <center>(można wcześniej ale jeszcze będziemy szykować - można pomóc :))</center>
         </div>
 
         <!-- Lokalizacja -->
@@ -224,20 +228,24 @@
 
         <!-- Miejsce na treść -->
         <div class="date-time">
-            <p>Serdecznie zapraszamy na piknik będący przedłużeniem naszego poślubnego tournee!</p></div>
+            <p>Serdecznie zapraszamy na piknik będący przedłużeniem naszego poślubnego tournee!</p>
+        </div>
 
-           <div class="content-placeholder"> <p>Można nazwać go poprawinami, dla nas będzie to przede wszystkim okazja do spotkania się z Wami w miłej i całkowicie niezobowiązującej atmosferze nawiązującej do najlepszych woodstockowych tradycji 🔥 </p>
-           </div>
-           <p><b>Szczegóły:</b></p>
-             <div class="content-placeholder">
+        <div class="content-placeholder"> 
+            <p>Można nazwać go poprawinami, dla nas będzie to przede wszystkim okazja do spotkania się z Wami w miłej i całkowicie niezobowiązującej atmosferze nawiązującej do najlepszych woodstockowych tradycji 🔥 </p>
+        </div>
+        
+        <p><b>Szczegóły:</b></p>
+        
+        <div class="content-placeholder">
             <p>Do naszej dyspozycji będzie duża wiata ze stołami, scena i miejsce przed nią oraz duże pole, na którym można postawić samochód, namiot, campera, co tylko zapragniecie 😎 ponieważ nocleg na miejscu wydaje się wygodną opcją dla miłośników turystyki.</p>
             <p>Rozstawienie się z namiotem / camperem jest w uczciwej cenie: zero zł. Na miejscu jest podłączenie do prądu (na pewno przyda się przedłużacz), natomiast bieżąca woda dostępna jest z jednego kranu.<br>Toaleta będzie w formie "tojki".</p>
             <p>Planujemy muzykę, piwo, wegegrilla i ogólny chillout. Jeśli zabierzecie najmłodszych, przygotujemy grę terenową w miejscu imprezy.</p> 
             <p>W razie poszukiwania planów na kolejny dzień (3 Maja) - w pobliżu jest park rozrywki Energylandia, no i oczywiście tradycyjne atrakcje Jury Krakowsko-Częstochowskiej!</p>
-            <p>Formuła imprezy zakłada pełną swobodę, zatem nie musicie się specjalnie zapowiadać - zapraszamy Was w dowolnym składzie i wymiarze czasowym 😉</p></div>
-        </div>
-    <!-- Sekcja FAQ -->
-    <div class="content-placeholder">
+            <p>Formuła imprezy zakłada pełną swobodę, zatem nie musicie się specjalnie zapowiadać - zapraszamy Was w dowolnym składzie i wymiarze czasowym 😉</p>
+        </div> <!-- ZAMKNIĘCIE content-placeholder -->
+
+        <!-- Sekcja FAQ (TERAZ JEST WEWNATRZ KONTENERA I POD TEKSTEM) -->
         <div class="faq-section">
             <h2>Częste pytania (FAQ)</h2>
             
@@ -269,14 +277,19 @@
                     <p>Możecie wziąć ze sobą dowolne zaprowiantowanie. My przekąski i grilla bezmięsnego ale miejsca na ruszcie starczy na każdą z opcji!</p>
                 </div>
             </details>
-        </div>
-                <details class="faq-item">
+            
+            <!-- PRZENIESIONE PYTANIE O AKCESORIA (teraz jest poprawnie w sekcji FAQ) -->
+            <details class="faq-item">
                 <summary>Czy mam zabrać ze sobą jakieś akcesoria imprezowe?</summary>
                 <div class="faq-content">
                     <p>Co tylko zechcecie - tak, aby móc się dobrze bawić i zrelaksować w granicach komfortu innych.</p>
                     <p>Chcielibyśmy zachować woodstockowy klimat wzajemnej życzliwości i zabawy - jeśli np. masz fajną grę, przebranie, gadżet, pojazd mogący spodobać się innym - będzie to właściwe miejsce!</p>
                 </div>
             </details>
-</div>
+
+        </div> <!-- ZAMKNIĘCIE FAQ SECTION -->
+
+    </div> <!-- POPRAWNE ZAMKNIĘCIE GŁÓWNEGO KONTENERA -->
+
 </body>
 </html>
